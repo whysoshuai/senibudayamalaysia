@@ -124,6 +124,10 @@ iframe {
 	-webkit-transition: all 0.5s ease;
 }
 
+#more {
+	display: none
+}
+
 #myBtn {
 	background-color: grey;
 	border: none;
