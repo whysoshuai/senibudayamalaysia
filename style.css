@@ -123,3 +123,19 @@ iframe {
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 }
+
+#myBtn {
+	background-color: grey;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	color: white;
+}
+
+#myBtn:hover {
+	background-color: #454545;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
