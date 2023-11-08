@@ -1,15 +1,21 @@
-function myFunction() {
-	var dots = document.getElementById("dots");
-	var moreText = document.getElementById("more");
-	var btnText = document.getElementById("myBtn");
+document.addEventListener('contextmenu', event => event.preventDefault());
 
-	if (dots.style.display === "none") {
-		dots.style.display = "inline";
-		btnText.innerHTML = "Read more"; 
-		moreText.style.display = "none";
-	} else {
-		dots.style.display = "none";
-		btnText.innerHTML = "Read less"; 
-		moreText.style.display = "inline";
-	}
+(function () {
+		// https://dashboard.emailjs.com/admin/account
+		emailjs.init('5ty_urpEcIa3TnyjO');
+})();
+
+window.onload = function () {
+		document.getElementById('email-form').addEventListener('submit', function (event) {
+				event.preventDefault();
+				// generate a five digit number for the contact_number variable
+				this.contact_number.value = Math.random() * 100000 | 0;
+				// these IDs from the previous steps
+				emailjs.sendForm('service_r24gb87', 'template_itl7fqb', this)
+						.then(function () {
+								console.log('SUCCESS!');
+						}, function (error) {
+								console.log('FAILED...', error);
+						});
+		});
 }

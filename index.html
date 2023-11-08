@@ -8,79 +8,70 @@
 	<link rel="stylesheet" href="style.css" />
 	<link rel="icon" href="./assets/logo.png">
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script defer src="tilt.jquery.js"></script>
 	<script defer src="script.js"></script>
 </head>
 
 <body>
-	<div class="navbar">
-		<a href="index.html">
-			<img data-tilt data-tilt-scale="2" src="assets/logo.png" width="60px">
-		</a>
 
-		<div class="dropdown">
-			<button class="dropbtn">Food</button>
-			<div class="dropdown-content">
-				<a href="food.html#cnfood">Chinese food</a>
-				<a href="food.html#myfood">Malay food</a>
-				<a href="food.html#infood">Indian food</a>
-			</div>
-		</div>
+	<nav>
+		<ul class="mainMenu">
+			<li><a href="index.html" id="logo">
+					<img data-tilt data-tilt-scale="2" src="assets/logo.png" width="60px">
+				</a></li>
+			<li><a href="index.html" id="btn">Home</a></li>
+			<li><a href="#" id="btn">Content</a>
+				<ul class="subMenu">
+					<li id="topic"><a href="chinese.html">Chinese</a>
+						<ul class="SuperSubMenu">
+							<li><a href="chinese.html#cnfood">Food</a></li>
+							<li><a href="chinese.html#cncloth">Clothing</a></li>
+							<li><a href="chinese.html#cnfest">Festival</a></li>
+							<li><a href="chinese.html#cngame">Games</a></li>
+							<li><a href="chinese.html#cnbuild">Buildings</a></li>
+							<li><a href="chinese.html#cndance">Dances</a></li>
+						</ul>
+					</li>
 
-		<div class="dropdown">
-			<button class="dropbtn">Clothing</button>
-			<div class="dropdown-content">
-				<a href="clothing.html#cncloth">Chinese cloth</a>
-				<a href="clothing.html#mycloth">Malay cloth</a>
-				<a href="clothing.html#incloth">Indian cloth</a>
-			</div>
-		</div>
+					<li id="topic"><a href="malay.html">Malay</a>
+						<ul class="SuperSubMenu">
+							<li><a href="malay.html#myfood">Food</a></li>
+							<li><a href="malay.html#mycloth">Clothing</a></li>
+							<li><a href="malay.html#myfest">Festival</a></li>
+							<li><a href="malay.html#mygame">Games</a></li>
+							<li><a href="malay.html#mybuild">Buildings</a></li>
+							<li><a href="malay.html#mydance">Dances</a></li>
+						</ul>
+					</li>
 
-		<div class="dropdown">
-			<button class="dropbtn">Festival</button>
-			<div class="dropdown-content">
-				<a href="festival.html#cnfestival">Chinese festival</a>
-				<a href="festival.html#myfestival">Malay festival</a>
-				<a href="festival.html#infestival">Indian festival</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">Games</button>
-			<div class="dropdown-content">
-				<a href="games.html#cngame">Chinese game</a>
-				<a href="games.html#mygame">Malay game</a>
-				<a href="games.html#ingame">Indian game</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">Buildings</button>
-			<div class="dropdown-content">
-				<a href="buildings.html#cnbuilding">Chinese building</a>
-				<a href="buildings.html#mybuilding">Malay building</a>
-				<a href="buildings.html#inbuilding">Indian building</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">Dances</button>
-			<div class="dropdown-content">
-				<a href="dances.html#cndance">Chinese dance</a>
-				<a href="dances.html#mydance">Malay dance</a>
-				<a href="dances.html#indance">Indian dance</a>
-			</div>
-		</div>
-	</div>
+					<li id="topic"><a href="indian.html">Indian</a>
+						<ul class="SuperSubMenu">
+							<li><a href="indian.html#infood">Food</a></li>
+							<li><a href="indian.html#incloth">Clothing</a></li>
+							<li><a href="indian.html#infest">Festival</a></li>
+							<li><a href="indian.html#ingame">Games</a></li>
+							<li><a href="indian.html#inbuild">Buildings</a></li>
+							<li><a href="indian.html#indance">Dances</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a id="btn" href="about.html">About</a></li>
+			<li><a id="btn" href="contact.html">Contact</a></li>
+			<li><a id="btn" href="feedback.html">Feedback</a></li>
+		</ul>
+	</nav>
 
 	<section>
 		<h1 id="title">Seni Budaya Malaysia</h1>
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt maxime necessitatibus excepturi fugit ea.
+		<p id="maininfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt maxime necessitatibus excepturi
+			fugit ea.
 			Consequatur, ipsum nihil? Aut similique nihil quibusdam eaque, quasi ducimus porro ullam earum voluptates ad.
 			Unde,
 			perferendis, sed, repudiandae minus magnam qui aliquam facere eum tempore omnis sint sunt fuga? Consequatur
 			explicabo soluta facilis, expedita natus voluptas sed eum, fuga nisi repudiandae error. Quibusdam, ratione. Quos
-			nobis dolore tempora delectus reiciendis dolor corrupti necessitatibus dolorum.<span id="dots"> </span><span id="more"> Fugit vero nam ab consequatur
+			nobis dolore tempora delectus reiciendis dolor corrupti necessitatibus dolorum. Fugit vero nam ab consequatur
 			eveniet officiis maxime a iste obcaecati officia, expedita animi libero pariatur soluta distinctio ipsum impedit,
 			molestias suscipit excepturi inventore nisi aliquid ad quod. Tempora totam sint beatae aperiam accusantium
 			exercitationem similique deserunt ad, ea, numquam eveniet, eaque non earum modi sapiente distinctio expedita
@@ -115,7 +106,7 @@
 			recusandae distinctio veniam ipsam, aliquid eos doloribus esse nobis animi blanditiis sint iure. Exercitationem
 			corporis officia dolor dicta veniam deserunt eligendi error incidunt asperiores ad, quidem cupiditate unde minima
 			tenetur id expedita molestias eveniet laudantium repellendus debitis inventore saepe impedit consequatur! Dolores
-			accusamus nemo facere totam itaque dolorum sapiente, eaque ea. </span><button onclick="myFunction()" id="myBtn">Read more</button></p>
+			accusamus nemo facere totam itaque dolorum sapiente, eaque ea.</p>
 	</section>
 </body>
 
