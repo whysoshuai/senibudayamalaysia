@@ -1,70 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Seni Budaya Malaysia</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="./assets/logo.png">
-		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-		<script defer src="tilt.jquery.js"></script>
-		<script defer src="script.js"></script>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Seni Budaya Malaysia</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="./assets/logo.png">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script defer src="tilt.jquery.js"></script>
+	<script defer src="script.js"></script>
+	<script defer src="https://kit.fontawesome.com/be133042b1.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="easteregg.js"></script>
+
+
+	<link rel="stylesheet" href="about_style.css" />
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <body>
+	<audio autoplay loop id="bgmusic">
+		<source id="musicsrc" src="assets/backgroundmusic.mp3">
+	</audio>
 	<button onclick="topFunction()" id="myBtn" title="Back To Top">
-		Back to top
+		<i class="fa-solid fa-caret-up"></i>
 	</button>
-  <nav>
-    <ul class="mainMenu">
-      <li><a href="index.html" id="logo">
-          <img data-tilt data-tilt-scale="2" src="assets/logo.png" width="60px">
-        </a></li>
-      <li><a href="index.html" id="btn">Home</a></li>
-      <li><a href="#" id="btn">Content</a>
-        <ul class="subMenu">
-          <li id="topic"><a href="chinese.html">Chinese</a>
-            <ul class="SuperSubMenu">
-              <li><a href="chinese.html#cnfood">Food</a></li>
-              <li><a href="chinese.html#cncloth">Clothing</a></li>
-              <li><a href="chinese.html#cnfest">Festival</a></li>
-              <li><a href="chinese.html#cngame">Games</a></li>
-              <li><a href="chinese.html#cnbuild">Buildings</a></li>
-              <li><a href="chinese.html#cndance">Dances</a></li>
-            </ul>
-          </li>
+	<nav>
+		<ul class="mainMenu">
+			<li><a href="index.html" id="logo">
+					<img data-tilt data-tilt-scale="2" src="assets/logo.png" width="60px">
+				</a></li>
+			<li><a href="index.html" id="btn">Home</a></li>
+			<li><a href="#" id="btn">Content</a>
+				<ul class="subMenu">
+					<li id="topic"><a href="chinese.html">Chinese</a>
+						<ul class="SuperSubMenu">
+							<li><a href="chinese.html#cnfood">Food</a></li>
+							<li><a href="chinese.html#cncloth">Clothing</a></li>
+							<li><a href="chinese.html#cnfest">Festival</a></li>
+							<li><a href="chinese.html#cngame">Games</a></li>
+							<li><a href="chinese.html#cnbuild">Buildings</a></li>
+							<li><a href="chinese.html#cndance">Dances</a></li>
+						</ul>
+					</li>
 
-          <li id="topic"><a href="malay.html">Malay</a>
-            <ul class="SuperSubMenu">
-              <li><a href="malay.html#myfood">Food</a></li>
-              <li><a href="malay.html#mycloth">Clothing</a></li>
-              <li><a href="malay.html#myfest">Festival</a></li>
-              <li><a href="malay.html#mygame">Games</a></li>
-              <li><a href="malay.html#mybuild">Buildings</a></li>
-              <li><a href="malay.html#mydance">Dances</a></li>
-            </ul>
-          </li>
+					<li id="topic"><a href="malay.html">Malay</a>
+						<ul class="SuperSubMenu">
+							<li><a href="malay.html#myfood">Food</a></li>
+							<li><a href="malay.html#mycloth">Clothing</a></li>
+							<li><a href="malay.html#myfest">Festival</a></li>
+							<li><a href="malay.html#mygame">Games</a></li>
+							<li><a href="malay.html#mybuild">Buildings</a></li>
+							<li><a href="malay.html#mydance">Dances</a></li>
+						</ul>
+					</li>
 
-          <li id="topic"><a href="indian.html">Indian</a>
-            <ul class="SuperSubMenu">
-              <li><a href="indian.html#infood">Food</a></li>
-              <li><a href="indian.html#incloth">Clothing</a></li>
-              <li><a href="indian.html#infest">Festival</a></li>
-              <li><a href="indian.html#ingame">Games</a></li>
-              <li><a href="indian.html#inbuild">Buildings</a></li>
-              <li><a href="indian.html#indance">Dances</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a id="btn" href="about.html">About</a></li>
-      <li><a id="btn" href="contact.html">Contact</a></li>
-      <li><a id="btn" href="feedback.html">Feedback</a></li>
-    </ul>
-  </nav>
-	
+					<li id="topic"><a href="indian.html">Indian</a>
+						<ul class="SuperSubMenu">
+							<li><a href="indian.html#infood">Food</a></li>
+							<li><a href="indian.html#incloth">Clothing</a></li>
+							<li><a href="indian.html#infest">Festival</a></li>
+							<li><a href="indian.html#ingame">Games</a></li>
+							<li><a href="indian.html#inbuild">Buildings</a></li>
+							<li><a href="indian.html#indance">Dances</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a id="btn" href="about.html">About</a></li>
+			<li><a id="btn" href="feedback.html">Feedback</a></li>
+		</ul>
+	</nav>
+  <div class="bgtext">
+	 <h1 class="maintext">Our team</h1>
+  </div>
+  
+	<div class="column">
+		<div class="card" data-tilt>
+			<div class="container">
+				<h2>Kay Jinpeng</h2>
+				<p class="title">Team leader</p>
+				<p>"Slept for<button id="test1" onclick="btnclick6()">five hours</button>everyday for 3 months straight."</p>
+				<a href="https://www.instagram.com/kayjp2010/" target="_blank"><img src="assets/insta.jpg" class="social"
+						alt="Instagram"></a>
+				<a href="mailto:kayjinpeng@gmail.com" target="_blank"><img src="assets/gmail.png" class="social"
+						alt="Gmail"></a>
+				<a href="https://wa.me/60182839789" target="_blank"><img src="assets/whatsapp.png" class="social"
+						alt="Whatsapp"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="card" data-tilt>
+			<div class="container">
+				<h2>Jayden Oo</h2>
+				<p class="title">Programmer</p>
+				<p>"Hi! I am TheJays / Jayden! I like fried<button id="test1" onclick="btnclick4()">eggs</button>."</p>
+				<a href="https://www.instagram.com/thejaysdev/" target="_blank"><img src="assets/insta.jpg" class="social"
+						alt="Instagram"></a>
+				<a href="mailto:thejaysdev@gmail.com"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/60164078088" target="_blank"><img src="assets/whatsapp.png" class="social"
+						alt="Whatsapp"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="card" data-tilt>
+			<div class="container">
+				<h2>Issac Tan</h2>
+				<p class="title">Programmer</p>
+				<p>"An ordinary student with some basics<button id="test1" onclick="btnclick1()">programming</button>knowledge."</p>
+				<a href="https://www.instagram.com/issactan_/" target="_blank"><img src="assets/insta.jpg" class="social"
+						alt="Instagram"></a>
+				<a href="mailto:issacextan@gmail.com"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/60166569292" target="_blank"><img src="assets/whatsapp.png" class="social"
+						alt="Whatsapp"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="card" data-tilt>
+			<div class="container">
+				<h2>Koay Jayden</h2>
+				<p class="title">Researcher</p>
+				<p>"Just an ordinary student from<button id="test1" onclick="btnclick3()">1T2</button>in SMJK Chung Ling"</p>
+				<a href="https://www.instagram.com/kj__0315/" target="_blank"><img src="assets/insta.jpg" class="social"
+						alt="Instagram"></a>
+				<a href="mailto:koayjayden10@gmail.com"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/601159134947" target="_blank"><img src="assets/whatsapp.png" class="social"
+						alt="Whatsapp"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="card" data-tilt>
+			<div class="container">
+				<h2>Zer Kai</h2>
+				<p class="title">Researcher</p>
+				<p>"Hi! I'm a student from 1T2<button id="test1" onclick="btnclick5()">Chung Ling</button>."</p>
+				<a href="https://www.instagram.com/kelvinzk_3710/" target="_blank"><img src="assets/insta.jpg" class="social"
+						alt="Instagram"></a>
+				<a href="mailto:m-11292604@moe-dl.edu.my"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/60195769289" target="_blank"><img src="assets/whatsapp.png" class="social"
+						alt="Whatsapp"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="card" data-tilt>
+			<div class="container">
+				<h2>Karsten</h2>
+				<p class="title">Researcher</p>
+				<p>"I'm a<button id="test1" onclick="btnclick2()">skinny</button>person."</p>
+				<a href="mailto:m-11134894@moe-dl.edu.my"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/60164387808" target="_blank"><img src="assets/whatsapp.png" class="social"
+						alt="Whatsapp"></a>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

@@ -11,11 +11,15 @@
 	<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script defer src="tilt.jquery.js"></script>
 	<script defer src="script.js"></script>
+	<script defer src="https://kit.fontawesome.com/be133042b1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+	<audio autoplay loop id="bgmusic">
+		<source src="assets/backgroundmusic.mp3">
+	</audio>
 	<button onclick="topFunction()" id="myBtn" title="Back To Top">
-		Back to top
+		<i class="fa-solid fa-caret-up"></i>
 	</button>
   <nav>
     <ul class="mainMenu">
@@ -60,7 +64,6 @@
         </ul>
       </li>
       <li><a id="btn" href="about.html">About</a></li>
-      <li><a id="btn" href="contact.html">Contact</a></li>
       <li><a id="btn" href="feedback.html">Feedback</a></li>
     </ul>
   </nav>

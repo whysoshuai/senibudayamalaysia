@@ -1,5 +1,3 @@
-document.addEventListener('contextmenu', event => event.preventDefault());
-
 (function () {
 		// https://dashboard.emailjs.com/admin/account
 		emailjs.init('5ty_urpEcIa3TnyjO');
@@ -43,3 +41,7 @@ function topFunction() {
 function myFunction() {
 	alert("Thanks for your feedback!");
 }
+
+var audio = document.getElementById("bgmusic");
+audio.volume = 0.2;
+

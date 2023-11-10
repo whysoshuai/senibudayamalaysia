@@ -10,14 +10,42 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	color: white;
+  display: none;
 }
 
 h1 {
 	font-size: 5em;
 }
 
+#contenttitle {
+	text-align: center;
+	font-size: 6em;
+	font-style: italic;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+h4 {
+	text-align: center;
+}
+
+.card {
+	margin: 50px;
+	color: black;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.container {
+	padding: 0 16px;
+	padding-top: 1px;
+}
+
 p {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 #maininfo {
@@ -129,6 +157,7 @@ li:hover>a {
 	position: absolute;
 	display: none;
 	border-radius: 10px;
+	z-index: 1;
 }
 
 .subMenu li {
@@ -151,6 +180,7 @@ li:hover>a {
 	-webkit-transform: translate(100%, 0);
 	transform: translate(100%, 0);
 	display: none;
+	z-index: 1;
 }
 
 .SuperSubMenu li {
@@ -183,6 +213,8 @@ textarea {
 
 /* back to top */
 #myBtn {
+	width: 50px;
+	height: 50px;
 	display: none;
 	position: fixed;
 	bottom: 20px;
@@ -191,7 +223,7 @@ textarea {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: blue;
+	background-color: royalblue;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -199,18 +231,43 @@ textarea {
 }
 
 #myBtn:hover {
-	background-color: lightskyblue;
+	background-color: deepskyblue;
 }
 
 /* email */
 .hidden {
-		display: none;
+	display: none;
 }
 
 #success-message {
-		margin-top: 10px;
-		padding: 10px;
-		background-color: #4caf50;
-		color: white;
-		border-radius: 5px;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #4caf50;
+	color: white;
+	border-radius: 5px;
+}
+
+/* #eastereggbtn {
+	width: 50px;
+	height: 50px;
+	border: none;
+	outline: none;
+	background-color: royalblue;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#eastereggbtn:hover {
+	background-color: deepskyblue;
+} */
+
+#test1 {
+	border: none;
+	outline: none;
+	background-color: #0000;
+	cursor: pointer;
+  font-size:22px;
+	font-family: "Poppins", sans-serif;
 }

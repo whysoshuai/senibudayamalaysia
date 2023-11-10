@@ -11,12 +11,16 @@
 	<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script defer src="tilt.jquery.js"></script>
 	<script defer src="script.js"></script>
+	<!-- font-awesome -->
+	<script defer src="https://kit.fontawesome.com/be133042b1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+	<audio autoplay loop id="bgmusic">
+		<source src="assets/backgroundmusic.mp3">
+	</audio>
 	<button onclick="topFunction()" id="myBtn" title="Back To Top">
-		Back to top
+		<i class="fa-solid fa-caret-up"></i>
 	</button>
 
 	<nav>
@@ -62,55 +66,73 @@
 				</ul>
 			</li>
 			<li><a id="btn" href="about.html">About</a></li>
-			<li><a id="btn" href="contact.html">Contact</a></li>
 			<li><a id="btn" href="feedback.html">Feedback</a></li>
 		</ul>
 	</nav>
 
 	<section>
-		<h1 id="title">Malaysian Cultural Art</h1>
-		<p id="maininfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt maxime necessitatibus excepturi
-			fugit ea.
-			Consequatur, ipsum nihil? Aut similique nihil quibusdam eaque, quasi ducimus porro ullam earum voluptates ad.
-			Unde,
-			perferendis, sed, repudiandae minus magnam qui aliquam facere eum tempore omnis sint sunt fuga? Consequatur
-			explicabo soluta facilis, expedita natus voluptas sed eum, fuga nisi repudiandae error. Quibusdam, ratione. Quos
-			nobis dolore tempora delectus reiciendis dolor corrupti necessitatibus dolorum. Fugit vero nam ab consequatur
-			eveniet officiis maxime a iste obcaecati officia, expedita animi libero pariatur soluta distinctio ipsum impedit,
-			molestias suscipit excepturi inventore nisi aliquid ad quod. Tempora totam sint beatae aperiam accusantium
-			exercitationem similique deserunt ad, ea, numquam eveniet, eaque non earum modi sapiente distinctio expedita
-			quibusdam ipsa. Quisquam dolorem repellat amet deleniti vitae ipsa doloribus voluptatum quos quia. Eum atque
-			voluptas quidem amet ipsum, maiores recusandae ea laboriosam doloremque incidunt. Nobis soluta optio placeat? Fuga
-			rem explicabo perspiciatis illum amet, impedit nemo unde? Assumenda ab mollitia impedit itaque veritatis voluptate
-			amet laborum. Pariatur neque recusandae asperiores, magnam veritatis sapiente vel natus excepturi provident
-			dolores
-			nesciunt cumque, omnis corrupti esse illum porro odit dicta iure similique iste tempora dolorem modi praesentium
-			debitis! Porro nemo dignissimos quas deleniti ducimus molestiae rem optio, repudiandae error libero dolore non
-			sint
-			pariatur, quasi aliquid, quo minus culpa ad architecto quibusdam omnis adipisci exercitationem expedita? Odio
-			placeat labore laboriosam temporibus, optio pariatur ipsum vero iste enim quae, vitae a natus aliquam illum
-			reprehenderit unde eius iusto possimus eum consequuntur. Quas quod officiis in rem totam unde fugiat et porro!
-			Tenetur ad neque minus enim a, animi magnam. Hic magni voluptates rerum explicabo ducimus. Dicta aliquid
-			voluptates,
-			molestias quaerat beatae aperiam consequatur mollitia earum in, perspiciatis, ex corrupti voluptate perferendis
-			libero harum reiciendis impedit obcaecati esse minima. Dolorum qui, harum ipsum, laboriosam eius voluptate nihil,
-			iste mollitia quibusdam quasi delectus ea doloremque consequatur sunt iure? Iste labore impedit hic magni? Odit
-			expedita explicabo voluptate incidunt delectus animi reiciendis praesentium debitis ut eligendi quas accusantium
-			soluta, impedit maxime ullam excepturi at aliquid recusandae, sint hic assumenda? Corporis, aspernatur aut minima
-			exercitationem magni cumque voluptatibus facere rem debitis suscipit neque? Fuga, deleniti eius. Quidem alias
-			vitae
-			voluptates, perspiciatis obcaecati eveniet sint ratione voluptas architecto esse enim in, rerum, maxime expedita!
-			Mollitia odio culpa adipisci facilis, praesentium corporis nihil harum facere ipsa. Odit vitae, autem eveniet,
-			earum
-			optio debitis, distinctio iure culpa nihil eligendi soluta et necessitatibus. Architecto laudantium totam nulla
-			eius
-			accusamus maiores aliquid facilis, illo quisquam est qui suscipit dolorem quia earum? Vitae iusto nesciunt optio
-			eveniet architecto quis nulla impedit qui reprehenderit perspiciatis cum amet iste esse, blanditiis eligendi
-			voluptas magni quam pariatur? Facilis porro reiciendis commodi in sequi quibusdam fugit quas natus numquam
-			recusandae distinctio veniam ipsam, aliquid eos doloribus esse nobis animi blanditiis sint iure. Exercitationem
-			corporis officia dolor dicta veniam deserunt eligendi error incidunt asperiores ad, quidem cupiditate unde minima
-			tenetur id expedita molestias eveniet laudantium repellendus debitis inventore saepe impedit consequatur! Dolores
-			accusamus nemo facere totam itaque dolorum sapiente, eaque ea.</p>
+		<h1 id="title">Seni Budaya Malaysia</h1>
+		<div class="card" style="height: 350px;">
+			<div class="container">
+				<h2>Malaysia</h2>
+				<img src="assets/klcc.jpeg" alt="klcc" title="klcc" style="float: left;border-radius: 10px;margin-right: 25px;" width="300px">
+				<h4 style="padding-top: 25px;">Malaysia is a country in Southeast Asia occupying parts of the Malay Peninsula and the island of Borneo.
+					It's known for its beaches, rainforests and amazing geographical features such as the Malacca Straits and
+					Sarawak Chamber. The capital city, Kuala Lumpur, is home to colonial buildings, busy shopping districts such
+					as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers. Malaysia is also the
+					melting pot of different cultures and ethics which also makes it a culinary haven.</h4>
+			</div>
+		</div>
+
+		<div class="card" style="height: 320px;">
+			<div class="container">
+				<h2>The origin of the Malays</h2>
+				<h4>Malay, any member of an ethnic group of the Malay Peninsula and portions of adjacent islands of Southeast
+					Asia, including the east coast of Sumatra, the coast of Borneo, and smaller islands that lie between these
+					areas. The Malays speak various dialects belonging to the Austronesian (Malayo-Polynesian) family of
+					languages.The Malays were once probably a people of coastal Borneo who expanded into Sumatra and the Malay
+					Peninsula as a result of their trading and seafaring way of life. That this expansion occurred only in the
+					last 1,500 years or so is indicated by the fact that the languages of the Malay group are all still very much
+					alike though very divergent from the languages of other peoples of Sumatra, Borneo, and other neighbouring
+					lands. In the early 21st century the Malays constituted about half of the population of Peninsular Malaysia
+					(West Malaysia) and about one-eighth of the population of East Malaysia (Sarawak and Sabah).</h4>
+			</div>
+		</div>
+
+		<div class="card" style="height: 340px;">
+			<div class="container">
+				<h2>The origin of the Chinese</h2>
+				<h4>Ethnically known as Orang Cina or Kaum Cina in Malaysia, the Malaysian Chinese are the descendants of
+					Chinese who arrived between the 14th and mid-20th centuries. The first wave of Chinese emigrants in the 14th
+					century were mostly merchants, who were partly attracted to the economic potential of the country and partly
+					fleeing from the persecution of the Ching government of Chung Kuok (China). The latter waves were mostly
+					poverty-stricken peasants who hoped for a better livelihood for themselves and their families. It was only in
+					the 19th century, particularly after the 1820s, that a great number of Chinese migrated to Malaya. Th is was
+					due to colonial occupation, which caused rapid economic and land development in the region. This development
+					included the opening up of large tracts of land, which created opportunities for mercantile expansion, which
+					in turn attracted emigrants from China. Most of these emigrants were from rural villages and small towns of
+					the southeastern provinces of Fujian and Gaungdong. Upon arrival in Malaya many worked as indentured laborers
+					known as coolies.</h4>
+			</div>
+		</div>
+
+		<div class="card" style="height: 340px;">
+			<div class="container">
+				<h2>The origin of Indians</h2>
+				<h4>Indian traders came to Malaya as early as the 14th century. Through trading, they introduced Islam to the
+					locals, particularly to the Malays. This was also done by marrying into the various royal families,
+					consequently achieving positions of great influence. It was only in the latter half of the 19th century that
+					an influx of Indian immigrants came to Malaya, due to its rapid economic development. The largest annual flow
+					into Malaya occurred during the period of 1911-30, when more than 90,000 persons landed each year. They were
+					recruited and solicited by the British, mostly as indentured laborers to work on rubber plantations. A large
+					number of clerical workers were also brought in from Ceylon, while a number of professionals, doctors, and
+					teachers were brought in from India, particularly after World War I. Almost every Indian ethnic subgroup is
+					represented in Malaysia. This includes the Tamils, Gujaratis, Malayalis, Punjabi, Sindhis, Pathans, Telegus,
+					Kannarese, and the Sri Lankan Tamil and Singhalese. They came from many parts of India and belonged to
+					different faiths. Nevertheless, Malaysian Indians are mostly Tamils, forming 87.6 per cent of the population
+					in Malaysia.</h4>
+			</div>
+		</div>
 	</section>
 </body>
 
