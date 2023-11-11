@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Seni Budaya Malaysia</title>
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="./assets/logo.png">
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -13,6 +13,9 @@
 	<script defer src="script.js"></script>
 	<!-- font-awesome -->
 	<script defer src="https://kit.fontawesome.com/be133042b1.js" crossorigin="anonymous"></script>
+	<!-- aos -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
 </head>
 
 <body>
@@ -72,7 +75,7 @@
 
 	<section>
 		<h1 id="title">Seni Budaya Malaysia</h1>
-		<div class="card" style="height: 350px;">
+		<div class="card" style="height: 350px;" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
 			<div class="container">
 				<h2>Malaysia</h2>
 				<img src="assets/klcc.jpeg" alt="klcc" title="klcc" style="float: left;border-radius: 10px;margin-right: 25px;" width="300px">
@@ -84,7 +87,7 @@
 			</div>
 		</div>
 
-		<div class="card" style="height: 320px;">
+		<div class="card" style="height: 320px;" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
 			<div class="container">
 				<h2>The origin of the Malays</h2>
 				<h4>Malay, any member of an ethnic group of the Malay Peninsula and portions of adjacent islands of Southeast
@@ -99,7 +102,7 @@
 			</div>
 		</div>
 
-		<div class="card" style="height: 340px;">
+		<div class="card" style="height: 340px;" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
 			<div class="container">
 				<h2>The origin of the Chinese</h2>
 				<h4>Ethnically known as Orang Cina or Kaum Cina in Malaysia, the Malaysian Chinese are the descendants of
@@ -116,7 +119,7 @@
 			</div>
 		</div>
 
-		<div class="card" style="height: 340px;">
+		<div class="card" style="height: 340px;" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
 			<div class="container">
 				<h2>The origin of Indians</h2>
 				<h4>Indian traders came to Malaya as early as the 14th century. Through trading, they introduced Islam to the
@@ -134,6 +137,7 @@
 			</div>
 		</div>
 	</section>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>
