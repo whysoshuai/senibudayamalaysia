@@ -36,7 +36,7 @@ function btnclick5(){
 function btnclick6(){
   if (btn1 && btn2 && btn3 && btn4 && btn5){
     alert("Fine, here's your song change.");
-    document.getElementById("musicsrc").src = "assets/bgmusic.mp3";
+    document.getElementById("musicsrc").src = "./assets/src/bgmusic.mp3";
     document.getElementById("bgmusic").load();
   } else {
     alert("... Why did you click this button?");

@@ -5,24 +5,23 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Seni Budaya Malaysia</title>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="icon" href="./assets/logo.png">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="icon" href="./assets/src/logo.png">
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	<script defer src="tilt.jquery.js"></script>
-	<script defer src="script.js"></script>
+	<script defer src="./assets/js/tilt.jquery.js"></script>
+	<script defer src="./assets/js/script.js"></script>
 	<script defer src="https://kit.fontawesome.com/be133042b1.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="easteregg.js"></script>
-
-
-	<link rel="stylesheet" href="about_style.css" />
-	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<script src="./assets/js/easteregg.js"></script>
+	<link rel="stylesheet" href="./assets/css/about_style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<audio autoplay loop id="bgmusic">
-		<source id="musicsrc" src="assets/backgroundmusic.mp3">
+		<source id="musicsrc" src="./assets/src/backgroundmusic.mp3">
 	</audio>
 	<button onclick="topFunction()" id="myBtn" title="Back To Top">
 		<i class="fa-solid fa-caret-up"></i>
@@ -30,7 +29,7 @@
 	<nav>
 		<ul class="mainMenu">
 			<li><a href="index.html" id="logo">
-					<img data-tilt data-tilt-scale="2" src="assets/logo.png" width="60px">
+					<img data-tilt data-tilt-scale="2" src="./assets/src/logo.png" width="60px">
 				</a></li>
 			<li><a href="index.html" id="btn">Home</a></li>
 			<li><a href="#" id="btn">Content</a>
@@ -73,21 +72,21 @@
 			<li><a id="btn" href="feedback.html">Feedback</a></li>
 		</ul>
 	</nav>
-  <div class="bgtext">
-	 <h1 class="maintext">Our team</h1>
-  </div>
-  
+	<div class="bgtext">
+		<h1 class="maintext">Our team</h1>
+	</div>
+
 	<div class="column">
 		<div class="card" data-tilt>
 			<div class="container">
 				<h2>Kay Jinpeng</h2>
 				<p class="title">Team leader</p>
 				<p>"Slept for<button id="test1" onclick="btnclick6()">five hours</button>everyday for 3 months straight."</p>
-				<a href="https://www.instagram.com/kayjp2010/" target="_blank"><img src="assets/insta.jpg" class="social"
+				<a href="https://www.instagram.com/kayjp2010/" target="_blank"><img src="./assets/src/insta.jpg" class="social"
 						alt="Instagram"></a>
-				<a href="mailto:kayjinpeng@gmail.com" target="_blank"><img src="assets/gmail.png" class="social"
+				<a href="mailto:kayjinpeng@gmail.com" target="_blank"><img src="./assets/src/gmail.png" class="social"
 						alt="Gmail"></a>
-				<a href="https://wa.me/60182839789" target="_blank"><img src="assets/whatsapp.png" class="social"
+				<a href="https://wa.me/60182839789" target="_blank"><img src="./assets/src/whatsapp.png" class="social"
 						alt="Whatsapp"></a>
 			</div>
 		</div>
@@ -99,10 +98,10 @@
 				<h2>Jayden Oo</h2>
 				<p class="title">Programmer</p>
 				<p>"Hi! I am TheJays / Jayden! I like fried<button id="test1" onclick="btnclick4()">eggs</button>."</p>
-				<a href="https://www.instagram.com/thejaysdev/" target="_blank"><img src="assets/insta.jpg" class="social"
+				<a href="https://www.instagram.com/thejaysdev/" target="_blank"><img src="./assets/src/insta.jpg" class="social"
 						alt="Instagram"></a>
-				<a href="mailto:thejaysdev@gmail.com"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
-				<a href="https://wa.me/60164078088" target="_blank"><img src="assets/whatsapp.png" class="social"
+				<a href="mailto:thejaysdev@gmail.com"><img src="./assets/src/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/60164078088" target="_blank"><img src="./assets/src/whatsapp.png" class="social"
 						alt="Whatsapp"></a>
 			</div>
 		</div>
@@ -113,11 +112,12 @@
 			<div class="container">
 				<h2>Issac Tan</h2>
 				<p class="title">Programmer</p>
-				<p>"An ordinary student with some basics<button id="test1" onclick="btnclick1()">programming</button>knowledge."</p>
-				<a href="https://www.instagram.com/issactan_/" target="_blank"><img src="assets/insta.jpg" class="social"
+				<p>"An ordinary student with some basics<button id="test1" onclick="btnclick1()">programming</button>knowledge."
+				</p>
+				<a href="https://www.instagram.com/issactan_/" target="_blank"><img src="./assets/src/insta.jpg" class="social"
 						alt="Instagram"></a>
-				<a href="mailto:issacextan@gmail.com"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
-				<a href="https://wa.me/60166569292" target="_blank"><img src="assets/whatsapp.png" class="social"
+				<a href="mailto:issacextan@gmail.com"><img src="./assets/src/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/60166569292" target="_blank"><img src="./assets/src/whatsapp.png" class="social"
 						alt="Whatsapp"></a>
 			</div>
 		</div>
@@ -129,10 +129,10 @@
 				<h2>Koay Jayden</h2>
 				<p class="title">Researcher</p>
 				<p>"Just an ordinary student from<button id="test1" onclick="btnclick3()">1T2</button>in SMJK Chung Ling"</p>
-				<a href="https://www.instagram.com/kj__0315/" target="_blank"><img src="assets/insta.jpg" class="social"
+				<a href="https://www.instagram.com/kj__0315/" target="_blank"><img src="./assets/src/insta.jpg" class="social"
 						alt="Instagram"></a>
-				<a href="mailto:koayjayden10@gmail.com"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
-				<a href="https://wa.me/601159134947" target="_blank"><img src="assets/whatsapp.png" class="social"
+				<a href="mailto:koayjayden10@gmail.com"><img src="./assets/src/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/601159134947" target="_blank"><img src="./assets/src/whatsapp.png" class="social"
 						alt="Whatsapp"></a>
 			</div>
 		</div>
@@ -144,10 +144,10 @@
 				<h2>Zer Kai</h2>
 				<p class="title">Researcher</p>
 				<p>"Hi! I'm a student from 1T2<button id="test1" onclick="btnclick5()">Chung Ling</button>."</p>
-				<a href="https://www.instagram.com/kelvinzk_3710/" target="_blank"><img src="assets/insta.jpg" class="social"
-						alt="Instagram"></a>
-				<a href="mailto:m-11292604@moe-dl.edu.my"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
-				<a href="https://wa.me/60195769289" target="_blank"><img src="assets/whatsapp.png" class="social"
+				<a href="https://www.instagram.com/kelvinzk_3710/" target="_blank"><img src="./assets/src/insta.jpg"
+						class="social" alt="Instagram"></a>
+				<a href="mailto:m-11292604@moe-dl.edu.my"><img src="./assets/src/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/60195769289" target="_blank"><img src="./assets/src/whatsapp.png" class="social"
 						alt="Whatsapp"></a>
 			</div>
 		</div>
@@ -159,8 +159,8 @@
 				<h2>Karsten</h2>
 				<p class="title">Researcher</p>
 				<p>"I'm a<button id="test1" onclick="btnclick2()">skinny</button>person."</p>
-				<a href="mailto:m-11134894@moe-dl.edu.my"><img src="assets/gmail.png" class="social" alt="Gmail"></a>
-				<a href="https://wa.me/60164387808" target="_blank"><img src="assets/whatsapp.png" class="social"
+				<a href="mailto:m-11134894@moe-dl.edu.my"><img src="./assets/src/gmail.png" class="social" alt="Gmail"></a>
+				<a href="https://wa.me/60164387808" target="_blank"><img src="./assets/src/whatsapp.png" class="social"
 						alt="Whatsapp"></a>
 			</div>
 		</div>

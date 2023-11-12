@@ -62,7 +62,7 @@ p {
 }
 
 /* Image hover - increase size */
-.template:hover {
+.template:hover, #klcc:hover {
 	transform: scale(1.1);
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;

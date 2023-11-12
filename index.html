@@ -5,22 +5,20 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Seni Budaya Malaysia</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" href="./assets/logo.png">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="icon" href="./assets/src/logo.png">
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	<script defer src="tilt.jquery.js"></script>
-	<script defer src="script.js"></script>
-	<!-- font-awesome -->
+	<script defer src="./assets/js/tilt.jquery.js"></script>
+	<script defer src="./assets/js/script.js"></script>
 	<script defer src="https://kit.fontawesome.com/be133042b1.js" crossorigin="anonymous"></script>
-	<!-- aos -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
 	<audio autoplay loop id="bgmusic">
-		<source src="assets/backgroundmusic.mp3">
+		<source src="./assets/src/backgroundmusic.mp3">
 	</audio>
 	<button onclick="topFunction()" id="myBtn" title="Back To Top">
 		<i class="fa-solid fa-caret-up"></i>
@@ -29,7 +27,7 @@
 	<nav>
 		<ul class="mainMenu">
 			<li><a href="index.html" id="logo">
-					<img data-tilt data-tilt-scale="2" src="assets/logo.png" width="60px">
+					<img data-tilt data-tilt-scale="2" src="./assets/src/logo.png" width="60px">
 				</a></li>
 			<li><a href="index.html" id="btn">Home</a></li>
 			<li><a href="#" id="btn">Content</a>
@@ -78,8 +76,10 @@
 		<div class="card" style="height: 350px;" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
 			<div class="container">
 				<h2>Malaysia</h2>
-				<img src="assets/klcc.jpeg" alt="klcc" title="klcc" style="float: left;border-radius: 10px;margin-right: 25px;" width="300px">
-				<h4 style="padding-top: 25px;">Malaysia is a country in Southeast Asia occupying parts of the Malay Peninsula and the island of Borneo.
+				<img src="./assets/src/klcc.jpeg" alt="klcc" title="klcc" id="klcc" style="float: left;border-radius: 10px;margin-right: 25px;"
+					width="300px">
+				<h4 style="padding-top: 25px;">Malaysia is a country in Southeast Asia occupying parts of the Malay Peninsula
+					and the island of Borneo.
 					It's known for its beaches, rainforests and amazing geographical features such as the Malacca Straits and
 					Sarawak Chamber. The capital city, Kuala Lumpur, is home to colonial buildings, busy shopping districts such
 					as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers. Malaysia is also the
