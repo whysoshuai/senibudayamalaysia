@@ -256,3 +256,25 @@ textarea {
   font-size:22px;
 	font-family: "Poppins", sans-serif;
 }
+
+input {
+  border-radius: 4px;
+  height: 20px;
+  border: none;
+}
+
+textarea {
+  border-radius:4px;
+}
+
+#send {
+  height: 30px;
+  width: 80px;
+  background-color: #00a2ff;
+  border: none;
+  border-radius: 8px;
+}
+
+#send:hover {
+  background-color: #007bff;
+}
