@@ -43,7 +43,7 @@ function myFunction() {
 }
 
 var audio = document.getElementById("bgmusic");
-audio.volume = 0.2;
+audio.volume = 0.1;
 
 //cool animation
 AOS.init({

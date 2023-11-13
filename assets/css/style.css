@@ -4,7 +4,7 @@ body {
 	margin: 0%;
 	padding: 0%;
 	font-family: "Poppins", sans-serif;
-	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("assets/background.jpg");
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../src/background.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -62,7 +62,7 @@ p {
 }
 
 /* Image hover - increase size */
-.template:hover, #klcc:hover {
+.template:hover, #klcc:hover, #malay:hover, #chinese:hover, #indian:hover {
 	transform: scale(1.1);
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
@@ -247,22 +247,6 @@ textarea {
 	color: white;
 	border-radius: 5px;
 }
-
-/* #eastereggbtn {
-	width: 50px;
-	height: 50px;
-	border: none;
-	outline: none;
-	background-color: royalblue;
-	color: white;
-	padding: 15px;
-	border-radius: 10px;
-	cursor: pointer;
-}
-
-#eastereggbtn:hover {
-	background-color: deepskyblue;
-} */
 
 #test1 {
 	border: none;
