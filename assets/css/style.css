@@ -44,6 +44,13 @@ h4 {
 	padding-top: 1px;
 }
 
+.containertext {
+	height: 75vh;
+	width: 100%;
+	display:grid;
+	place-items:center;
+}
+
 p {
 	font-size: 22px;
 }
@@ -69,7 +76,6 @@ p {
 }
 
 /* center */
-#title,
 #cnfood,
 #cncloth,
 #cnfest,
