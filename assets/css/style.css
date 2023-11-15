@@ -291,7 +291,7 @@ textarea {
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
-	width: 15px;
+	width: 18px;
 }
 
 ::-webkit-scrollbar-track {
