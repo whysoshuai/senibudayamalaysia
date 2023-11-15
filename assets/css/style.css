@@ -284,3 +284,7 @@ textarea {
 #send:hover {
   background-color: #007bff;
 }
+
+#name {
+	font-weight: bold;
+}
