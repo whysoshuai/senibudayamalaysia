@@ -309,3 +309,7 @@ textarea {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #555;
 }
+
+.ignore-css {
+	all: unset;
+}
