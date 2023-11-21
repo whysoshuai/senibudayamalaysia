@@ -313,3 +313,8 @@ textarea {
 .ignore-css {
 	all: unset;
 }
+
+#google_translate_element {
+	margin-top: 50px;
+	margin-left: 500px;
+}

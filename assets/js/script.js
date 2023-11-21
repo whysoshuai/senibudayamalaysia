@@ -50,3 +50,12 @@ AOS.init({
 	duration: 3000,
 	once: true,
 });
+
+// translate func
+function googleTranslateElementInit(){
+	new google.translate.TranslateElement({
+		pageLanguage: 'en'
+	},
+	'google_translate_element'
+	);
+}
