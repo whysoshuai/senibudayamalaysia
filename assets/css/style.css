@@ -60,7 +60,7 @@ p {
 	font-weight: 300;
 }
 
-.template {
+.template, #vid {
 	float: left;
 	width: 400px;
 	margin-left: 30px;
@@ -69,7 +69,7 @@ p {
 }
 
 /* Image hover - increase size */
-.template:hover, #klcc:hover, #malay:hover, #chinese:hover, #indian:hover {
+.template:hover, #klcc:hover, #malay:hover, #chinese:hover, #indian:hover, #vid:hover {
 	transform: scale(1.1);
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
